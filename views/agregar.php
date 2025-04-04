@@ -18,18 +18,8 @@ if ($name && $price && $stock && $category && $foto) {
     echo "<h2>Por favor complete todos los campos</h2>";
 }
 
-// Redirigiendo a la página de productos después de 2 segundos
+// Redirigiendo a la pagina despues de 2 segundos
+
+header("refresh:2;url=productos.php");
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>t</title>
-</head>
-<body>
-    <a href="index.php">xd</a>
-</body>
-</html>
