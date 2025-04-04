@@ -30,14 +30,14 @@ function mostrarTablas($filas)
     echo "</table>";
 }
 
-function agregarPersonaje($nombre,$color,$tipo,$nivel,$foto)
+function agregarProducto($name,$price,$stock,$category,$foto)
 {
-    $sql = "INSERT INTO personajes (nombre, color, tipo, nivel, foto) VALUES (:nombre, :color, :tipo, :nivel, :foto)";
+    $sql = "INSERT INTO products (productname, price, stock, category, foto) VALUES (:productname, :price, :stock, :category, :foto)";
     $parametros = [
-        ':nombre' => $nombre,
-        ':color' => $color,
-        ':tipo' => $tipo,
-        ':nivel' => $nivel,
+        ':productname' => $name,
+        ':price' => $price,
+        ':stock' => $stock,
+        ':category' => $category,
         ':foto' => $foto
     ];
     conexion::exec($sql, $parametros);
